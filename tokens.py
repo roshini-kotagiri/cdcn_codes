@@ -29,9 +29,10 @@ def parse(code):
         token_type = identify(token)
         print(f"Token: {token} - Type: {token_type}")
 
-# Main function to test the program
+# Main function to test the program with user input
 def main():
-    code = "int main() { int a = 10; }"  # Sample code
+    print("Enter the code snippet to parse:")
+    code = input()  # Take user input for the code
     parse(code)
 
 # Run the program
